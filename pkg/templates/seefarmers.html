@@ -1,0 +1,27 @@
+{% extends 'fo_dashboard.html' %}
+
+{% block seefarmers %}
+<div class="col-md-12 mt-4" id="myfarmers">
+    <ul>
+        <li><input type="search" name="searchfarmer"placeholder="find farmers by..."class="form-control-sm"style="height:5vh"></li>
+        <li><input type="button" name="getallfarmers"class="btn btn-success form-control-sm" value="Get all farmers"style="color:orange;background-color:black;border-color:orange;height:1vh;width:10vw;margin-left:1vw"></li>
+    </ul>
+</div>
+<div class="row"id="seefarmerprofile">
+    <div class="col-md-3">
+        <img src="/static/images/hadiza.png"width="250vw"height="200vh" class="img-fluid mt-4 "style="border-radius:10px;margin-left:2%">
+    </div>
+    <div class="col-md-3 mt-3">
+        <p>Name: Hadiza Ibrahim Anchau</p>
+        <p>TG: ager1</p>
+        <p>id: 4076</p>
+        <p>State: Kaduna</p>
+    </div>
+    <div class="col-md-3 mt-3">
+        <p>lga: Ikara</p>
+        <p>Village/ward: saulawa</p>
+        <p>farm size: 2ha</p>
+        <p>Crop: Maize</p>
+    </div>
+</div>
+{% endblock seefarmers%}

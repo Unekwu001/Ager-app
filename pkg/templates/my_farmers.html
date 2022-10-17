@@ -1,0 +1,42 @@
+{% extends 'fo_dashboard.html' %}
+{% block myfarmers %}
+<div class="col-md-12 mt-4" id="myfarmers">
+    <ul>
+        <li><input type="search" name="searchfarmer"placeholder="find farmers by..."class="form-control-sm"style="height:5vh"></li>
+        <li><input type="button" name="getallfarmers"class="btn btn-success form-control-sm" value="Get all farmers"style="color:orange;background-color:black;border-color:orange;height:1vh;width:10vw;margin-left:1vw"></li>
+    </ul>
+</div>
+<div class="farmerstable">
+    <table class="table table_stripped"style="color:white;background-color:grey">
+        <tr>
+            <th>S/N</th>
+            <th>farmer id</th>
+            <th>Trust group</th>
+            <th>first name</th>
+            <th>surname</th>
+            <th>other names</th>
+            <th>state</th>
+            <th>lga</th>
+            <th>village</th>
+            <th>crop type</th>
+            <th>farm size(ha)</th>
+            <th>contract signed</th>
+        </tr>
+        <tr> 
+            <td><a href="{{url_for('seefarmerprofile')}}">1</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">001</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">ager1</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">Hadiza</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">Anchau</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">Ibrahim</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">kaduna</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">ikara</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">saulawa</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">maize</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">2</a></td>
+            <td><a href="{{url_for('seefarmerprofile')}}">yes</a></td>
+
+        </tr>
+    </table>
+</div>
+{% endblock myfarmers %}
